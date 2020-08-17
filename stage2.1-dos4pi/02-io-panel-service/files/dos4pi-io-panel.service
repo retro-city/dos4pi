@@ -1,0 +1,14 @@
+[Unit]
+Description=DOS/4PI IO Panel
+DefaultDependencies=no
+After=local-fs.target
+
+[Service]
+ExecStart=/home/pi/turbo.py
+Restart=always
+RestartSec=0
+StandardOutput=syslog
+StandardError=syslog
+
+[Install]
+WantedBy=sysinit.target

@@ -56,6 +56,12 @@
 # Enable audio (loads snd_bcm2835)
 dtparam=audio=on
 
+# DOS/4PI
+# Enable HDD-activity LED on GPIO17
+dtoverlay=act-led,gpio=17
+# Disable Rainbow Splash
+disable_splash=1
+
 [pi4]
 # Enable DRM VC4 V3D driver on top of the dispmanx display stack
 dtoverlay=vc4-fkms-v3d

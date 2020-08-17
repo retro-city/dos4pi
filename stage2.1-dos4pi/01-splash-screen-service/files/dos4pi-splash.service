@@ -1,0 +1,15 @@
+[Unit]
+Description=DOS/4PI Splash
+DefaultDependencies=no
+After=local-fs.target
+
+[Service]
+Type=forking
+ExecStart=/usr/bin/omxplayer -o hdmi /home/pi/intro.mp4
+User=root
+StandardInput=tty
+StandardOutput=tty
+StandardError=tty
+
+[Install]
+WantedBy=sysinit.target

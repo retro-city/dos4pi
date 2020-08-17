@@ -1,0 +1,4 @@
+omxplayer
+python-pip python3-pip
+raspi-gpio python-gpiozero python3-gpiozero python3-rpi.gpio
+python-spidev python3-spidev
